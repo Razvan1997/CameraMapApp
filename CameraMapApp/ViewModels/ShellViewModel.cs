@@ -1,5 +1,6 @@
 ﻿using Caliburn.Micro;
 using CameraMapApp.Contracts.Views;
+using Esri.ArcGISRuntime.Data;
 using Esri.ArcGISRuntime.Geometry;
 using Esri.ArcGISRuntime.Mapping;
 using Esri.ArcGISRuntime.Portal;
@@ -10,6 +11,8 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace CameraMapApp.ViewModels
 {
@@ -19,6 +22,7 @@ namespace CameraMapApp.ViewModels
         public MapViewModel MapViewModel { get; set; }
         public NavigationViewModel NavigationViewModel { get; set; }
 
+        
         public ShellViewModel()
         {
             MapViewModel = new MapViewModel();
@@ -35,5 +39,6 @@ namespace CameraMapApp.ViewModels
         {
             return Task.FromResult(true);
         }
+
     }
 }

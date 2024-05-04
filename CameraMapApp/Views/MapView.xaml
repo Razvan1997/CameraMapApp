@@ -10,6 +10,6 @@
     d:DesignWidth="800"
     mc:Ignorable="d">
     <Grid>
-        <esri:MapView Map="{Binding Map}" />
+        <esri:MapView Map="{Binding MyMapView.Map}" />
     </Grid>
 </UserControl>
